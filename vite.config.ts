@@ -15,8 +15,8 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@/components': Path.resolve(__dirname, 'src/components'),
-      '@/lib': Path.resolve(__dirname, 'src/lib'),
+      '@/components': Path.resolve(__dirname, 'browser/components'),
+      '@/lib': Path.resolve(__dirname, 'browser/lib'),
     }
   }
 })
