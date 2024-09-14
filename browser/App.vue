@@ -3,6 +3,16 @@ import { useColorMode } from '@vueuse/core'
 import { Icon } from '@iconify/vue'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from '@/components/ui/navigation-menu'
 
 const mode = useColorMode()
 </script>
@@ -28,6 +38,18 @@ const mode = useColorMode()
       </DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
+  <NavigationMenu>
+    <NavigationMenuList>
+      <NavigationMenuItem>
+        <NavigationMenuTrigger>Characters</NavigationMenuTrigger>
+        <NavigationMenuContent>
+          <NavigationMenuLink><RouterLink to="/character">Character1</RouterLink></NavigationMenuLink>
+        </NavigationMenuContent>
+      </NavigationMenuItem>
+    </NavigationMenuList>
+  </NavigationMenu>
+
+  <RouterView />
 </template>
 
 <style scoped>
