@@ -17,6 +17,7 @@ export default defineConfig({
     alias: {
       '@/components': Path.resolve(__dirname, 'browser/components'),
       '@/lib': Path.resolve(__dirname, 'browser/lib'),
+      '@/api': Path.resolve(__dirname, 'browser/api'),
     }
-  }
+  },
 })

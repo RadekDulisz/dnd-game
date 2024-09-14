@@ -14,6 +14,10 @@ import {
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
 
+import { getCharacters } from '@/api'
+
+getCharacters()
+
 const mode = useColorMode()
 </script>
 
