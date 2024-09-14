@@ -4,6 +4,10 @@ import { Icon } from '@iconify/vue'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 
+import { getCharacters } from '@/api'
+
+getCharacters()
+
 const mode = useColorMode()
 </script>
 

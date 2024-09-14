@@ -5,6 +5,7 @@
     "paths": {
       "@/components/*": ["browser/components/*"],
       "@/lib/*": ["browser/lib/*"],
+      "@/api": ["browser/api"],
       "browser/lib/*": ["browser/lib/*"]
     },
   },
