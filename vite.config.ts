@@ -9,14 +9,14 @@ import autoprefixer from 'autoprefixer'
 export default defineConfig({
   css: {
     postcss: {
-      plugins: [tailwind(), autoprefixer()]
+      plugins: [autoprefixer(), tailwind()]
     }
   },
   plugins: [vue()],
   resolve: {
     alias: {
-      '@/components': Path.resolve(__dirname, '@/components'),
-      '@/lib': Path.resolve(__dirname, '@/lib'),
+      '@/components': Path.resolve(__dirname, 'src/components'),
+      '@/lib': Path.resolve(__dirname, 'src/lib'),
     }
   }
 })
