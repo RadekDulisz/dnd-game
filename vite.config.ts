@@ -1,4 +1,4 @@
-import Path from 'path'
+import Path, { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -15,6 +15,8 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
+      find: '@',
+      replacement: resolve('browser'),
       '@/components': Path.resolve(__dirname, 'browser/components'),
       '@/lib': Path.resolve(__dirname, 'browser/lib'),
       '@/api': Path.resolve(__dirname, 'browser/api'),
